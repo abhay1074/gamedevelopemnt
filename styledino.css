@@ -1,0 +1,62 @@
+#score{
+    text-align: center;
+}
+#game{
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: url("https://www.iiitnr.ac.in/sites/default/files/homepage_banner/WhatsApp%20Image%202020-04-29%20at%2012.51.35%20PM.jpeg");
+    background-size: cover;
+}
+
+#dino{
+    height: 75px;
+    width: 75px;
+    position: relative;
+    top:225px;
+    background-image: url("img/Dino.png");
+    background-size: cover;
+    filter: invert(1);
+}
+#rock{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top:180px;
+    left: 550px;
+    background-image: url("img/Rock.png");
+    background-size: cover;  
+    animation: rock 1.33s infinite; 
+}
+
+@keyframes rock{
+    0%{left: 550px;}
+    100%{left: -50px;}
+}
+.jump-animation{
+    animation: jump 0.5s;
+}
+
+@keyframes jump{
+    0%{top: 225px;}
+    50%{top: 75px;}
+    75%{top: 75px;}
+    100%{top:225px;}
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  
+  /* Use your uploaded image as background */
+  background: url("https://www.shutterstock.com/image-vector/pixel-art-game-level-background-600nw-2553891639.jpg") no-repeat center center fixed;
+  
+  
+  background-size: cover;
+
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
